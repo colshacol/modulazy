@@ -1,7 +1,5 @@
 export default (src) => {
-  const onLoad = (event) => {
-    console.log('it loaded, yo!')
-  }
+  const onLoad = (event) => {}
 
   const onError = (error) => {
     throw new URIError("The script " + error.target.src + " didn't load correctly.")
@@ -9,8 +7,6 @@ export default (src) => {
 
   return new Promise((resolve, reject) => {
     global.__modulazy.emitter.on('registration', (event) => {
-      console.log({ event }, event.detail)
-      console.log('registeredddd')
       global.__modulazy.registry[event.name] = event.component
       resolve(event.component)
     })

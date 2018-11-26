@@ -1,9 +1,7 @@
 
-export default (name, component) => {
-  console.log('registering', name)
-  
+export default (name, component) => {  
   global.__modulazy.emitter.emit('registration', {
-    component: component(),
+    component,
     name,
   })
 }
