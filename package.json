@@ -1,0 +1,19 @@
+{
+  "name": "modulazy",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/modulazy.cjs.js",
+  "scripts": {
+    "build": "bili",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bili": "^3.4.2"
+  },
+  "dependencies": {
+    "mitt": "^1.1.3"
+  }
+}
